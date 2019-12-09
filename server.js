@@ -12,8 +12,9 @@
 const chalk = require('chalk');
 const debug = require('debug')('app');
 const { app } = require('./app');
+require('dotenv').config();
 
-const port = process.env.PORT;
+const port = 5000;
 
 // Start up the server!
 const startServer = async () => {
